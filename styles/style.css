@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansation:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Sansation:wght@300&display=swap');
+
+body {
+  background-color: #212529;
+}
+
+.bg-noise {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.bg-noise img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+h1 {
+  color: #ced4da;
+  font-family: "Sansation", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 50px;
+}
+
+.my_position {
+  color: #adb5bd;
+  font-family: "Sansation", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.my_info {
+  color: #adb5bd;
+  font-family: "Sansation", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.core_technologies {
+  color: #ced4da;
+}
+
+.core_technologies > h2 {
+  font-family: "Sansation", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+}
+
+.core_technologies > ul {
+  list-style-type: none;
+}
+
+.core_technologies > ul > li {
+  width: 200px;
+  border: #e9ecef solid 1px;
+}
