@@ -1,8 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Sansation:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Sansation:wght@300&display=swap');
 
+:root {
+
+  --text-color: #fffcf2;
+  --border-color: #403d39;
+  --hover-color: #eb5e28;
+
+}
+
 body {
-  background-color: #212529;
+  background-color: #252422;
+}
+
+.logo {
+  color: var(--text-color);
+  font-family: "Sansation", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.nav_style {
+  color: var(--text-color);
+  font-family: "Sansation", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  transition: color 0.25s ease;
+}
+
+.nav_style:hover {
+  color: var(--hover-color);
+}
+
+.button_style {
+  color: var(--text-color);
+  border: var(--hover-color) 1px solid;
+  background-color: var(--hover-color);
+  font-family: "Sansation", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  transition: color 0.4s ease, background-color 0.4s ease, border-color 0.4s ease;
+}
+
+.button_style:hover {
+  color: var(--hover-color);
+  border: var(--text-color) 1px solid;
+  background-color: var(--text-color);
 }
 
 .bg-noise {
@@ -22,7 +65,7 @@ body {
 }
 
 h1 {
-  color: #ced4da;
+  color: var(--text-color);
   font-family: "Sansation", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -30,21 +73,27 @@ h1 {
 }
 
 .my_position {
-  color: #adb5bd;
+  color: var(--text-color);
   font-family: "Sansation", sans-serif;
   font-weight: bold;
   font-style: normal;
 }
 
 .my_info {
-  color: #adb5bd;
+  color: var(--text-color);
   font-family: "Sansation", sans-serif;
   font-weight: 300;
   font-style: normal;
 }
 
 .core_technologies {
-  color: #ced4da;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 600px;
+  padding-inline: 50px;
+  color: var(--text-color);
+  border: var(--border-color) solid 1px;
 }
 
 .core_technologies > h2 {
@@ -56,9 +105,28 @@ h1 {
 
 .core_technologies > ul {
   list-style-type: none;
+  align-items: center;
+  font-family: "Sansation", sans-serif;
+  font-weight: bold;
+  font-style: normal;
 }
 
 .core_technologies > ul > li {
-  width: 200px;
-  border: #e9ecef solid 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 400px;
+  border: var(--border-color) solid 1px;
+  transition: border-color 0.4s ease;
+}
+
+.core_technologies > ul > li:hover {
+  border: var(--hover-color) solid 1px;
+}
+
+@media (max-width:1000px) {
+  .herman_picture {
+    display: none;
+  }
 }
